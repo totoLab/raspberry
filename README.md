@@ -2,10 +2,10 @@
 ## What this script does
 
 ### Initial requirements
-- Raspberry pi (I use the 4 with 2 gigs of RAM)<br />
-- SD card (at least 16 gb, I used a 64 one just because)<br />
-- A monitor (at least to setup your ssh service, then you can detach it*)<br />
-- Internet connection<br />
+- Raspberry pi (I use the 4 with 2 gigs of RAM);<br />
+- SD card (at least 16 gb, I used a 64 one just because);<br />
+- A monitor (at least to setup your ssh service, then you can detach it*);<br />
+- Internet connection.<br />
 
 *if you don't want to setup ssh for this installation you could avoid raspi-config's option 5 and the login with ssh. In this case you must have a monitor attached to the pi. 
 
