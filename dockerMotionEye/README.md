@@ -29,7 +29,7 @@ Insert password to log in.<br />
 sudo apt update && sudo apt upgrade
 
 ### Docker installation
-curl -sSL https://get.docker.com | sh
+curl -sSL https://get.docker.com | sh<br />
 sudo usermod -aG docker pi<br />
 
 ### Portainer installation
