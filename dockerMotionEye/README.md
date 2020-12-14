@@ -14,8 +14,8 @@
 Flash raspberry pi os (32-bit) and run it<br />
 
 #### Execute this and use the GUI
-sudo raspi-config {option 1: change user pi $password,<br />
-                   option 5: enable ssh (2),<br />
+sudo raspi-config {option 1: change user pi $password,
+                   option 5: enable ssh (2),
                   }<br />
 
 #### From terminal
@@ -29,7 +29,7 @@ Insert password to log in.<br />
 sudo apt update && sudo apt upgrade
 
 ### Docker installation
-curl -sSL https://get.docker.com | sh<br />
+curl -sSL https://get.docker.com | sh
 sudo usermod -aG docker pi<br />
 
 ### Portainer installation
@@ -54,6 +54,6 @@ Change your admin password from the dashboard and set a new user to just monitor
 
 ### Managing container from Portainer GUI interface
 Just go to your Raspberry's ip specifing port 9000 (or a different one if you changed during the installation) (ex: 192.168.238:9000) and log into portainer.
-I experienced a problem when logging in with multiple portainer instances (not at the same time).
+I experienced a problem when logging in with multiple portainer instances (not at the same time). <br/>
 From a discussion on the official repo I understood that browser's cache influence the endpoints and interrupt communication between Docker and Portainer.
 Clear your cache or use a private window.
