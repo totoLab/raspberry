@@ -38,22 +38,22 @@ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /va
 
 ### Motioneyeos container installation
 docker pull ccrisan/motioneye:master-armhf<br />
-docker run --name="motioneye" \<br />
-    -p 8765:8765 -p 8081:8081 \ <- you could change these ports as you want if you encounter problems<br />
-    --hostname="motioneye" \<br />
-    -v /etc/localtime:/etc/localtime:ro \<br />
-    -v /etc/motioneye:/etc/motioneye \<br />
-    -v /var/lib/motioneye:/var/lib/motioneye \<br />
-    --restart="always" \<br />
-    --detach=true \<br />
-    ccrisan/motioneye:master-armhf<br />
+docker run --name="motioneye" \
+    -p 8765:8765 -p 8081:8081 \ <- you could change these ports as you want if you encounter problems
+    --hostname="motioneye" \
+    -v /etc/localtime:/etc/localtime:ro \
+    -v /etc/motioneye:/etc/motioneye \
+    -v /var/lib/motioneye:/var/lib/motioneye \
+    --restart="always" \
+    --detach=true \
+    ccrisan/motioneye:master-armhf
 
 ### Managing motioneyeos
-Go to your Raspberry's ip specifing port 8765 (or a different one if you changed in the installation) (ex: 192.168.238:9000) and log in as admin without password.<br />
+Go to your Raspberry's ip specifing port 8765 (or a different one if you changed in the installation) (ex: 192.168.238:8765) and log in as admin without password.<br />
 Change your admin password from the dashboard and set a new user to just monitor the cameras.<br />
 
 ### Managing container from Portainer GUI interface
-Just go to your Raspberry's ip specifing port 9000 (or a different one if you changed in the installation) (ex: 192.168.238:9000) and log into portainer.
+Just go to your Raspberry's ip specifing port 9000 (or a different one if you changed during the installation) (ex: 192.168.238:9000) and log into portainer.
 I experienced a problem when logging in with multiple portainer instances (not at the same time).
 From a discussion on the official repo I understood that browser's cache influence the endpoints and interrupt communication between Docker and Portainer.
 Clear your cache or use a private window.
