@@ -54,3 +54,6 @@ Change your admin password from the dashboard and set a new user to just monitor
 
 ### Managing container from Portainer GUI interface
 Just go to your Raspberry's ip specifing port 9000 (or a different one if you changed in the installation) (ex: 192.168.238:9000) and log into portainer.
+I experienced a problem when logging in with multiple portainer instances (not at the same time).
+From a discussion on the official repo I understood that browser's cache influence the endpoints and interrupt communication between Docker and Portainer.
+Clear your cache or use a private window.
