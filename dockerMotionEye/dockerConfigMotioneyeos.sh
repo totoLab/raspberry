@@ -24,4 +24,4 @@ sudo docker run --name="motioneye" \
     ccrisan/motioneye:master-armhf
 
 echo "MotionEyeOs container deployment finished"
-echo "Installation finished. Check the setup your host machine's ip at port 9000."
+echo "Installation finished. Check the setup of your host machine's ip at port 9000."
